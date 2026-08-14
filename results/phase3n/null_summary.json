@@ -1,0 +1,370 @@
+{
+  "frozen": {
+    "env": {
+      "python": "3.11.8",
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA GeForce RTX 4080",
+      "model_id": "F:/HexyLab/residual-bus/models/Qwen2.5-1.5B-Instruct"
+    },
+    "inject_layer": 8,
+    "post_deadline_layer": 24,
+    "alphas": [
+      0.5,
+      1.0
+    ],
+    "primary_alpha": 0.5,
+    "D_mean_sha1": "b9b7ce81f5e381103f00e650b88e3d373910f824",
+    "D_mean_norm": 34.05711364746094,
+    "train_entities": [
+      "wug",
+      "cat",
+      "ring",
+      "book",
+      "hat",
+      "cup",
+      "star",
+      "fish",
+      "pen",
+      "car",
+      "box",
+      "leaf",
+      "coin",
+      "key"
+    ],
+    "heldout_entities": [
+      "tom",
+      "sam",
+      "lamp",
+      "tree",
+      "dog",
+      "dax"
+    ],
+    "GREEN_id": 13250,
+    "BLUE_id": 12203,
+    "spec_prompts": {
+      "arithmetic": "Is 3 plus 4 equal to 7? Answer in one word.",
+      "capital": "What is the capital of France? Reply with only one lowercase word.",
+      "comparison": "Is 5 greater than 4? Answer in one word.",
+      "unrelated_color": "Fact: the dax is red. Question: what color is the dax? Reply with only one lowercase word."
+    },
+    "spec_threshold": 0.05,
+    "flip_composite": 0.8333333333333334,
+    "primary_statistic": "mean held-out P(green) at alpha=0.5",
+    "S_semantic": 0.8791111020031558,
+    "flip_semantic": 1.0,
+    "spec_semantic_mean_pgreen": 7.933000594904302e-09,
+    "base_seed": 90000,
+    "N_isotropic": 2000,
+    "N_permuted": 2000,
+    "N_sign": 1000
+  },
+  "S_semantic": 0.8791111020031558,
+  "flip_semantic": 1.0,
+  "spec_semantic_mean_pgreen": 7.933000594904302e-09,
+  "random_family_stats": {
+    "isotropic": {
+      "n": 2000,
+      "mean": 1.3471072715810652e-06,
+      "median": 1.066356961860069e-06,
+      "sd": 1.3561983792831154e-06,
+      "max": 3.938271650501479e-05,
+      "q50": 1.066356961860069e-06,
+      "q90": 2.244372128122086e-06,
+      "q95": 2.974651726008899e-06,
+      "q99": 6.19411839681982e-06,
+      "q99.9": 1.3098991938029341e-05,
+      "k_ge_sem": 0,
+      "p_empirical_addone": 0.0004997501249375312,
+      "sem_percentile": 100.0
+    },
+    "permuted": {
+      "n": 2000,
+      "mean": 1.3166386228054133e-06,
+      "median": 1.0388125949464205e-06,
+      "sd": 1.2626749071925026e-06,
+      "max": 3.0130788722948086e-05,
+      "q50": 1.0388125949464205e-06,
+      "q90": 2.196880269999403e-06,
+      "q95": 2.927004866397128e-06,
+      "q99": 4.8223849779457765e-06,
+      "q99.9": 1.782095526378209e-05,
+      "k_ge_sem": 0,
+      "p_empirical_addone": 0.0004997501249375312,
+      "sem_percentile": 100.0
+    },
+    "sign": {
+      "n": 1000,
+      "mean": 4.9059429074595795e-06,
+      "median": 1.7549547511005883e-06,
+      "sd": 1.2296175458935645e-05,
+      "max": 0.00017149734190460053,
+      "q50": 1.7549547511005883e-06,
+      "q90": 9.853536195078608e-06,
+      "q95": 1.7144674295163393e-05,
+      "q99": 4.851496463760736e-05,
+      "q99.9": 0.00015488878952507203,
+      "k_ge_sem": 0,
+      "p_empirical_addone": 0.000999000999000999,
+      "sem_percentile": 100.0
+    }
+  },
+  "composite_semantic_like_counts": {
+    "isotropic": {
+      "count": 0,
+      "n": 2000
+    },
+    "permuted": {
+      "count": 0,
+      "n": 2000
+    },
+    "sign": {
+      "count": 0,
+      "n": 1000
+    }
+  },
+  "empirical_nulls": [
+    {
+      "family": "empirical_othercolor",
+      "id": "red",
+      "flip_rate": 0.0,
+      "S": 2.3095813149213035e-05,
+      "spec_mean_pgreen": 7.4334325479062884e-09,
+      "cos_dmean": 0.504692554473877,
+      "own_target": {
+        "own_flip": 1.0,
+        "own_p": 0.9696790011765738
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "yellow",
+      "flip_rate": 0.0,
+      "S": 0.00011954258537002258,
+      "spec_mean_pgreen": 8.115293598180884e-09,
+      "cos_dmean": 0.5182262659072876,
+      "own_target": {
+        "own_flip": 0.16666666666666666,
+        "own_p": 0.3265416668107825
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "black",
+      "flip_rate": 0.0,
+      "S": 1.2259507057917586e-05,
+      "spec_mean_pgreen": 8.523395340015243e-09,
+      "cos_dmean": 0.4391651749610901,
+      "own_target": {
+        "own_flip": 0.5,
+        "own_p": 0.5112130500394115
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "white",
+      "flip_rate": 0.0,
+      "S": 6.203745915408749e-06,
+      "spec_mean_pgreen": 8.709984747123917e-09,
+      "cos_dmean": 0.44416701793670654,
+      "own_target": {
+        "own_flip": 0.8333333333333334,
+        "own_p": 0.755173302460908
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "brown",
+      "flip_rate": 0.0,
+      "S": 6.37345909160379e-05,
+      "spec_mean_pgreen": 8.028306919806025e-09,
+      "cos_dmean": 0.5086642503738403,
+      "own_target": {
+        "own_flip": 0.0,
+        "own_p": 0.05292155928766734
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "purple",
+      "flip_rate": 0.0,
+      "S": 4.089601361199214e-05,
+      "spec_mean_pgreen": 8.81260537889378e-09,
+      "cos_dmean": 0.4029984772205353,
+      "own_target": {
+        "own_flip": 0.16666666666666666,
+        "own_p": 0.16050670765833755
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "orange",
+      "flip_rate": 0.0,
+      "S": 9.356164904942042e-05,
+      "spec_mean_pgreen": 7.638084111056052e-09,
+      "cos_dmean": 0.46030253171920776,
+      "own_target": {
+        "own_flip": 0.16666666666666666,
+        "own_p": 0.09957565173001164
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "pink",
+      "flip_rate": 0.0,
+      "S": 5.7764225427759805e-06,
+      "spec_mean_pgreen": 8.089368327296072e-09,
+      "cos_dmean": 0.42640796303749084,
+      "own_target": {
+        "own_flip": 0.0,
+        "own_p": 0.0005162964339294616
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "gray",
+      "flip_rate": 0.0,
+      "S": 2.460187949954848e-05,
+      "spec_mean_pgreen": 8.6896752419817e-09,
+      "cos_dmean": 0.44468846917152405,
+      "own_target": {
+        "own_flip": 0.0,
+        "own_p": 0.028667306659128835
+      }
+    },
+    {
+      "family": "empirical_othercolor",
+      "id": "gold",
+      "flip_rate": 0.0,
+      "S": 3.118817819953577e-05,
+      "spec_mean_pgreen": 7.2377902441345774e-09,
+      "cos_dmean": 0.43289536237716675,
+      "own_target": {
+        "own_flip": 0.0,
+        "own_p": 0.002338833131553094
+      }
+    },
+    {
+      "family": "empirical_crosstask",
+      "id": "arithmetic_2B",
+      "flip_rate": 0.0,
+      "S": 3.7999317341978873e-05,
+      "spec_mean_pgreen": 9.889915575194614e-09,
+      "cos_dmean": 0.11627885699272156
+    },
+    {
+      "family": "empirical_crosstask",
+      "id": "comparison_2C",
+      "flip_rate": 0.0,
+      "S": 3.412862610401457e-05,
+      "spec_mean_pgreen": 1.1364218945853279e-08,
+      "cos_dmean": 0.11902543902397156
+    }
+  ],
+  "empirical_summary": {
+    "max_S": 0.00011954258537002258,
+    "n_ge_sem": 0,
+    "othercolor_own_target_flip_mean": 0.2833333333333333,
+    "othercolor_green_flip_max": 0.0
+  },
+  "controls": {
+    "neg_Dmean@0.5": {
+      "flip": 0.0,
+      "S": 2.8155302951995804e-08
+    },
+    "Dmean@deadL24@0.5": {
+      "flip": 0.0,
+      "S": 3.9291103898967695e-06
+    },
+    "Dmean@1.0": {
+      "flip": 1.0,
+      "S": 0.9999209177125149
+    }
+  },
+  "anatomical_square": {
+    "semantic_receptive_S": 0.8791111020031558,
+    "semantic_dead_S": 3.9291103898967695e-06,
+    "noise_receptive_S_mean": 1.3471072715810652e-06,
+    "noise_dead_S_mean": 7.374383910412261e-07
+  },
+  "cross_phrasing_null": {
+    "n_train_painted": 12,
+    "n_heldout_fact": 8,
+    "alpha0.5": {
+      "semantic_flip": 0.125,
+      "semantic_S": 0.23562876853882583,
+      "isotropic": {
+        "n": 800,
+        "mean": 3.3814646535551056e-07,
+        "median": 3.18974888142016e-07,
+        "sd": 1.1756292258761364e-07,
+        "max": 9.865148235590507e-07,
+        "q50": 3.18974888142016e-07,
+        "q90": 4.91886130931723e-07,
+        "q95": 5.554043269191093e-07,
+        "q99": 6.774301133512878e-07,
+        "q99.9": 8.64887129685491e-07,
+        "k_ge_sem": 0,
+        "p_empirical_addone": 0.0012484394506866417,
+        "sem_percentile": 100.0
+      },
+      "permuted": {
+        "n": 800,
+        "mean": 3.316021027922752e-07,
+        "median": 3.1597682172298684e-07,
+        "sd": 1.2131186284673063e-07,
+        "max": 1.3513862678721277e-06,
+        "q50": 3.1597682172298684e-07,
+        "q90": 4.792256053940364e-07,
+        "q95": 5.461704199461865e-07,
+        "q99": 6.933365583371309e-07,
+        "q99.9": 1.0168644577686037e-06,
+        "k_ge_sem": 0,
+        "p_empirical_addone": 0.0012484394506866417,
+        "sem_percentile": 100.0
+      }
+    },
+    "alpha1.0": {
+      "semantic_flip": 1.0,
+      "semantic_S": 0.99991039367382,
+      "isotropic": {
+        "n": 800,
+        "mean": 7.561114205906986e-07,
+        "median": 5.400759916538126e-07,
+        "sd": 7.626741654115629e-07,
+        "max": 1.0052589618663816e-05,
+        "q50": 5.400759916538126e-07,
+        "q90": 1.3886715487736207e-06,
+        "q95": 1.9397848026651527e-06,
+        "q99": 3.6278135623532044e-06,
+        "q99.9": 7.198302716534283e-06,
+        "k_ge_sem": 0,
+        "p_empirical_addone": 0.0012484394506866417,
+        "sem_percentile": 100.0
+      },
+      "permuted": {
+        "n": 800,
+        "mean": 7.390087442893308e-07,
+        "median": 5.203659864777236e-07,
+        "sd": 7.822751479473063e-07,
+        "max": 8.687457925092383e-06,
+        "q50": 5.203659864777236e-07,
+        "q90": 1.4378974013284517e-06,
+        "q95": 1.8824798749349292e-06,
+        "q99": 3.5802093032846463e-06,
+        "q99.9": 8.220357428833893e-06,
+        "k_ge_sem": 0,
+        "p_empirical_addone": 0.0012484394506866417,
+        "sem_percentile": 100.0
+      }
+    }
+  },
+  "classification": {
+    "verdict": "STRONG_REJECTION",
+    "p_isotropic": 0.0004997501249375312,
+    "p_permuted": 0.0004997501249375312,
+    "p_sign": 0.000999000999000999,
+    "empirical_null_beats_semantic": false,
+    "composite_reproduced_by_noise": false,
+    "anatomical_gating_intact": true
+  }
+}

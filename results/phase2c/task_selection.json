@@ -1,0 +1,51 @@
+{
+  "template": "greater_than",
+  "template_str": "Is {X} greater than 4? Answer in one word.",
+  "xA": 1,
+  "xB": 5,
+  "threshold": 4,
+  "answer_A": {
+    "id": 2753,
+    "tok": "No"
+  },
+  "answer_B": {
+    "id": 9454,
+    "tok": "Yes"
+  },
+  "P_source": 16,
+  "P_threshold": 20,
+  "seq": 32,
+  "non_copy_verified": true,
+  "search_log": [
+    {
+      "template": "greater_than",
+      "n_correct_baselines": 32,
+      "found_pair": true,
+      "best_score": 0.9994143175191309
+    },
+    {
+      "template": "more_than_holds",
+      "n_correct_baselines": 10,
+      "found_pair": false,
+      "best_score": null
+    },
+    {
+      "template": "over_capacity",
+      "n_correct_baselines": 23,
+      "found_pair": true,
+      "best_score": 0.5079736335622363
+    },
+    {
+      "template": "over_limit",
+      "n_correct_baselines": 23,
+      "found_pair": true,
+      "best_score": 0.49793891421219
+    },
+    {
+      "template": "exceed_limit",
+      "n_correct_baselines": 22,
+      "found_pair": false,
+      "best_score": null
+    }
+  ]
+}

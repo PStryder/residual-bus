@@ -1,0 +1,46 @@
+{
+  "phase": "2D",
+  "task_family": "relational_binding (directed 2-link path composition -> categorical yes/no)",
+  "status": "HALTED_AT_TASK_SELECTION",
+  "halt_reason": "No clean high-confidence one-token-difference relational pair exists because Qwen2.5-1.5B-Instruct does not reliably perform closed-world 2-hop path composition in a single forward pass. Per protocol, the microscope was kept still: the confidence bar was NOT lowered to force a mappable task.",
+  "protocol_clause_invoked": "If no clean high-confidence one-token-difference task can be found, STOP and report that rather than weakening the protocol.",
+  "success_criterion_note": "Phase success does not require positive transfer; a sound negative/HALT with a reproducible diagnostic is a valid outcome.",
+  "apparatus_unchanged": "Same frozen Qwen2.5-1.5B-Instruct, FP32, eager, deterministic, resid_post convention. carto_lib.py reused unchanged; cartography.py helpers reused unchanged. New entry point cartography_relational.py. No sweep was run (no valid task).",
+  "task_search": {
+    "n_single_token_entity_labels": 30,
+    "templates_tried": ["two_link_path", "two_steps", "path_exact", "reach_2steps", "arrow_2hop", "follows", "gives"],
+    "automated_search_in_entrypoint": {"triples_tried": 260, "valid_pairs_found": 0},
+    "diagnostic_scan": {
+      "configs_per_template": 24,
+      "high_conf_valid_pairs_(minp>=0.9)": {"path_exact": 0, "reach_2steps": 0, "arrow_2hop": 0, "follows": 0, "gives": 0},
+      "binding_sensitive_correct_(A=yes,B=no,any_conf)": {"path_exact": 0, "reach_2steps": 3, "arrow_2hop": 0, "follows": 0, "gives": 0},
+      "insensitive_A_equals_B": {"path_exact": 12, "reach_2steps": 21, "arrow_2hop": 24, "follows": 24, "gives": 24}
+    }
+  },
+  "core_finding": {
+    "binding_insensitive": true,
+    "description": "Across 5 phrasings x 24 entity triples, the model's yes/no answer is essentially INVARIANT to the one-token binding change that flips the ground-truth answer. It anchors on surface phrasing (e.g. answers 'Yes' to everything under one wording, 'No' under another), and the single template with any correct-polarity hits (reach_2steps, 3/24) does so at p~0.3 (chance-level). It does not compute endpoint(rel1)==startpoint(rel2) and compose.",
+    "implication": "There is no reliable relational computation in the model to map. Activation cartography can only chart computations the model actually performs; single-site patching of a task the model cannot do would map noise, not relational binding."
+  },
+  "four_phase_task_tractability": {
+    "phase2a_copy": {"baseline_p_correct": "~1.000", "model_performs_task": true, "mapped": true},
+    "phase2b_arithmetic": {"baseline_p_correct": "~1.000", "model_performs_task": true, "mapped": true},
+    "phase2c_categorical_comparison": {"baseline_p_correct": "1.000/0.999", "model_performs_task": true, "mapped": true},
+    "phase2d_relational_composition": {"baseline_p_correct": "<=~0.35 and binding-insensitive", "model_performs_task": false, "mapped": false}
+  },
+  "l22_readout_hypothesis": "NOT_TESTABLE_IN_2D",
+  "l22_readout_note": "The ~L22-23 natural final-position readout hypothesis (stable across 2A L23 / 2B L22 / 2C L22) could NOT be tested here: with no binding-sensitive A/B pair, the natural A/B final-position divergence does not encode a derived-answer difference, so its layer profile is not comparable to the prior phases. The hypothesis therefore remains as of 2C (strengthened across 3 tasks), untested by 2D.",
+  "controls_status": "N/A (no sweep). The only executed operations were baseline forward passes for task search; deterministic, frozen, no grad, no weight change. Phases 1/2A/2B/2C artifacts untouched.",
+  "answers_to_report_questions": {
+    "1_relational_transfer": "Not measured — no valid task (model cannot perform relational composition).",
+    "2_bidirectional": "N/A",
+    "3_binding_writable_where": "N/A (no computation to write into)",
+    "4_binding_write_deadline": "N/A",
+    "5_16_causal_structure": "N/A — cartography not run.",
+    "17_computation_dependent_sites": "Consistent-and-extended: 2A/2B/2C already showed writable sites depend on the computation; 2D shows the stronger precondition that a computation must EXIST in the model before its causal anatomy can be mapped.",
+    "18_ambiguous": "Whether a larger model (or multi-token entities, or CoT / multi-pass) would perform this task and expose a mappable relational anatomy — untested by design (no model change, no multi-pass).",
+    "19_surprised": "The model is near-completely binding-INSENSITIVE (24/24 identical answers under 3 of 5 phrasings), not merely low-accuracy. It is not doing weak relational reasoning; it is doing none, and its output is driven by phrasing prior.",
+    "20_next_anatomical_test": "For DISCUSSION only (not executed): either (a) find a relational task this 1.5B model CAN do single-pass (e.g. 1-hop attribute binding / simple coreference) to map genuine binding, or (b) accept that 2-hop composition needs a larger model or multi-pass, which is out of the fixed-microscope scope."
+  },
+  "next_step": "Discuss with Pete: pick a relational task within the model's single-pass capability, OR change one controlled variable (model size / CoT) deliberately. Do NOT weaken the confidence bar to force 2D."
+}

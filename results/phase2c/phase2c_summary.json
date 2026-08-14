@@ -1,0 +1,381 @@
+{
+  "verdict": {
+    "cartography_sound": true,
+    "selfA_noop": true,
+    "selfB_noop": true,
+    "invariants_all_cells": true,
+    "regression_exact": true,
+    "baselines_reproducible": true,
+    "categorical_transfer_BtoA": true,
+    "categorical_transfer_AtoB": true,
+    "bidirectional": true,
+    "n_flip_BtoA": 26,
+    "n_flip_AtoB": 28,
+    "n_flip_bidirectional": 26,
+    "max_transfer_BtoA": 29.12110710144043,
+    "S_natural": 28.974340438842773,
+    "source_write_deadline_BtoA": 11,
+    "source_write_deadline_AtoB": 11,
+    "final_onset_BtoA": 17,
+    "final_onset_AtoB": 16,
+    "natural_final_jump_layer": 22,
+    "three_signals_coincide": false,
+    "any_interior_sufficient": true,
+    "random_target_flip_count": 3,
+    "boundary_hypothesis": "weakened"
+  },
+  "regression": {
+    "A_H": true,
+    "A_logits": true,
+    "B_H": true,
+    "B_logits": true
+  },
+  "repro": {
+    "A_H": true,
+    "A_logits": true,
+    "B_H": true,
+    "B_logits": true
+  },
+  "controls": {
+    "selfA_ok": true,
+    "selfB_ok": true,
+    "invariants_ok": true,
+    "random_target_flip_count": 3,
+    "random_max_kl": 24.294228975572622
+  },
+  "interior_role_max_transfer": {
+    "chat_template": 1.4591560363769531,
+    "content": 0.5445060729980469,
+    "question": 0.0,
+    "source_value": 29.02634620666504,
+    "threshold": 26.650707244873047,
+    "question_end": 0.35886383056640625,
+    "assistant_prefix": 29.12110710144043
+  },
+  "top_BtoA": [
+    {
+      "L": 25,
+      "P": 31,
+      "semantic_transfer": 29.12110710144043,
+      "transfer_fraction": 1.005065401330099,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994901783796314,
+      "prop_cos_final": 0.9944057464599609,
+      "prop_distimprove_final": 0.913403332233429
+    },
+    {
+      "L": 26,
+      "P": 31,
+      "semantic_transfer": 29.10892105102539,
+      "transfer_fraction": 1.0046448205599945,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994610203507072,
+      "prop_cos_final": 0.9890462756156921,
+      "prop_distimprove_final": 0.8518717288970947
+    },
+    {
+      "L": 24,
+      "P": 31,
+      "semantic_transfer": 29.092451095581055,
+      "transfer_fraction": 1.0040763881057995,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994878659470984,
+      "prop_cos_final": 0.9961509704589844,
+      "prop_distimprove_final": 0.9327825307846069
+    },
+    {
+      "L": 0,
+      "P": 16,
+      "semantic_transfer": 29.02634620666504,
+      "transfer_fraction": 1.0017948904801486,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994348031018343,
+      "prop_cos_final": 0.9814687967300415,
+      "prop_distimprove_final": 0.8572854995727539
+    },
+    {
+      "L": 27,
+      "P": 31,
+      "semantic_transfer": 28.974340438842773,
+      "transfer_fraction": 1.0,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994143175191309,
+      "prop_cos_final": 0.0,
+      "prop_distimprove_final": 0.0
+    },
+    {
+      "L": 1,
+      "P": 16,
+      "semantic_transfer": 28.581066131591797,
+      "transfer_fraction": 0.9864268072613741,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994680834419857,
+      "prop_cos_final": 0.8744109272956848,
+      "prop_distimprove_final": 0.6554727554321289
+    },
+    {
+      "L": 3,
+      "P": 16,
+      "semantic_transfer": 28.57471466064453,
+      "transfer_fraction": 0.9862075970618988,
+      "argmax_is_target": true,
+      "p_ansB": 0.9995172732059199,
+      "prop_cos_final": 0.8332338333129883,
+      "prop_distimprove_final": 0.6578447818756104
+    },
+    {
+      "L": 2,
+      "P": 16,
+      "semantic_transfer": 28.54132080078125,
+      "transfer_fraction": 0.9850550648779904,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994652470860567,
+      "prop_cos_final": 0.831835150718689,
+      "prop_distimprove_final": 0.6572649478912354
+    },
+    {
+      "L": 23,
+      "P": 31,
+      "semantic_transfer": 27.557659149169922,
+      "transfer_fraction": 0.9511056587236871,
+      "argmax_is_target": true,
+      "p_ansB": 0.9993893206207745,
+      "prop_cos_final": 0.9928451180458069,
+      "prop_distimprove_final": 0.877366304397583
+    },
+    {
+      "L": 4,
+      "P": 16,
+      "semantic_transfer": 27.53679084777832,
+      "transfer_fraction": 0.9503854248520776,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994976624820353,
+      "prop_cos_final": 0.7817955017089844,
+      "prop_distimprove_final": 0.5711709856987
+    },
+    {
+      "L": 12,
+      "P": 20,
+      "semantic_transfer": 26.650707244873047,
+      "transfer_fraction": 0.9198037588163808,
+      "argmax_is_target": true,
+      "p_ansB": 0.9993261936355639,
+      "prop_cos_final": 0.9304933547973633,
+      "prop_distimprove_final": 0.7047189474105835
+    },
+    {
+      "L": 22,
+      "P": 31,
+      "semantic_transfer": 26.353763580322266,
+      "transfer_fraction": 0.9095552541031311,
+      "argmax_is_target": true,
+      "p_ansB": 0.9993614633576668,
+      "prop_cos_final": 0.9897581934928894,
+      "prop_distimprove_final": 0.8511198163032532
+    },
+    {
+      "L": 6,
+      "P": 16,
+      "semantic_transfer": 26.306800842285156,
+      "transfer_fraction": 0.9079344152047881,
+      "argmax_is_target": true,
+      "p_ansB": 0.9994171115782112,
+      "prop_cos_final": 0.7281311750411987,
+      "prop_distimprove_final": 0.5419331192970276
+    },
+    {
+      "L": 5,
+      "P": 16,
+      "semantic_transfer": 26.30536651611328,
+      "transfer_fraction": 0.9078849118804622,
+      "argmax_is_target": true,
+      "p_ansB": 0.9993961141431643,
+      "prop_cos_final": 0.7299916744232178,
+      "prop_distimprove_final": 0.5268494486808777
+    },
+    {
+      "L": 7,
+      "P": 16,
+      "semantic_transfer": 25.865259170532227,
+      "transfer_fraction": 0.8926953566079269,
+      "argmax_is_target": true,
+      "p_ansB": 0.9993535621182027,
+      "prop_cos_final": 0.7615587115287781,
+      "prop_distimprove_final": 0.5576114058494568
+    }
+  ],
+  "top_nonsource": [
+    {
+      "L": 25,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 29.12110710144043,
+      "argmax_is_target": true
+    },
+    {
+      "L": 26,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 29.10892105102539,
+      "argmax_is_target": true
+    },
+    {
+      "L": 24,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 29.092451095581055,
+      "argmax_is_target": true
+    },
+    {
+      "L": 27,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 28.974340438842773,
+      "argmax_is_target": true
+    },
+    {
+      "L": 23,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 27.557659149169922,
+      "argmax_is_target": true
+    },
+    {
+      "L": 12,
+      "P": 20,
+      "role": "threshold",
+      "transfer": 26.650707244873047,
+      "argmax_is_target": true
+    },
+    {
+      "L": 22,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 26.353763580322266,
+      "argmax_is_target": true
+    },
+    {
+      "L": 21,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 25.684362411499023,
+      "argmax_is_target": true
+    },
+    {
+      "L": 20,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 25.47624969482422,
+      "argmax_is_target": true
+    },
+    {
+      "L": 13,
+      "P": 20,
+      "role": "threshold",
+      "transfer": 24.301952362060547,
+      "argmax_is_target": true
+    },
+    {
+      "L": 14,
+      "P": 20,
+      "role": "threshold",
+      "transfer": 24.037708282470703,
+      "argmax_is_target": true
+    },
+    {
+      "L": 19,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 20.362730026245117,
+      "argmax_is_target": true
+    },
+    {
+      "L": 18,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 20.298885345458984,
+      "argmax_is_target": true
+    },
+    {
+      "L": 17,
+      "P": 31,
+      "role": "assistant_prefix",
+      "transfer": 16.12689781188965,
+      "argmax_is_target": true
+    },
+    {
+      "L": 15,
+      "P": 20,
+      "role": "threshold",
+      "transfer": 12.329950332641602,
+      "argmax_is_target": false
+    }
+  ],
+  "three_phase_comparison": {
+    "phase2c": {
+      "task": "categorical",
+      "source_deadline": 11,
+      "final_onset": 17,
+      "natural_final_jump_layer": 22,
+      "n_interior_flip_sites": 3,
+      "max_transfer": 29.12110710144043,
+      "S_natural": 28.974340438842773,
+      "source_stripe_width": 12,
+      "rand_kl_shallow_L0_5": 0.05536318421986202,
+      "rand_kl_deep_L16_21": 2.575916586034291e-05,
+      "rand_target_flip_rate": 0.0033482142857142855
+    },
+    "phase2a": {
+      "source_deadline": 22,
+      "source_stripe_width": 23,
+      "final_onset": 23,
+      "final_flip_layers": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "n_interior_flip_sites": 0,
+      "natural_final_jump_layer": 23,
+      "max_transfer": 27.5423526763916,
+      "rand_kl_shallow_L0_5": 4.143996397106385,
+      "rand_kl_deep_L16_21": 0.6767002014433244,
+      "rand_target_flip_rate": 0.0,
+      "task": "copy"
+    },
+    "phase2b": {
+      "source_deadline": 21,
+      "source_stripe_width": 22,
+      "final_onset": 22,
+      "final_flip_layers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "n_interior_flip_sites": 0,
+      "natural_final_jump_layer": 22,
+      "max_transfer": 30.818683624267578,
+      "rand_kl_shallow_L0_5": 5.568709480517545,
+      "rand_kl_deep_L16_21": 4.55953174211079,
+      "rand_target_flip_rate": 0.0007002801120448179,
+      "task": "arithmetic"
+    }
+  },
+  "boundary": {
+    "classification": "weakened",
+    "why": "2C shows source_dl=11, final_onset=17, natural jump=L22 that do NOT cleanly coincide; the sharp 2B handoff did not fully reproduce for categorical output.",
+    "source_deadlines_2a2b2c": [
+      22,
+      21,
+      11
+    ],
+    "deadline_spread": 11,
+    "coincide_2c": false,
+    "conservative_label": "candidate architectural handoff region"
+  },
+  "natural_before_source_zero": true
+}

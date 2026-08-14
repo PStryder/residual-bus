@@ -1,0 +1,8 @@
+# Install torch from the CUDA 12.4 index (RTX 4080, driver 596.49):
+#   uv pip install torch --index-url https://download.pytorch.org/whl/cu124
+#   uv pip install -r requirements.txt
+torch
+transformers>=4.51
+accelerate
+numpy
+safetensors

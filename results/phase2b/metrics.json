@@ -1,0 +1,11 @@
+{
+  "n_cells": 8568,
+  "ops": [
+    "BtoA",
+    "AtoB",
+    "selfA",
+    "selfB",
+    "randA",
+    "randB"
+  ]
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "pos": 0,
+    "id": 151644,
+    "frag": "<|im_start|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 1,
+    "id": 8948,
+    "frag": "system",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 2,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 3,
+    "id": 2610,
+    "frag": "You",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 4,
+    "id": 525,
+    "frag": " are",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 5,
+    "id": 264,
+    "frag": " a",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 6,
+    "id": 10950,
+    "frag": " helpful",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 7,
+    "id": 17847,
+    "frag": " assistant",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 8,
+    "id": 13,
+    "frag": ".",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 9,
+    "id": 151645,
+    "frag": "<|im_end|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 10,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 11,
+    "id": 151644,
+    "frag": "<|im_start|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 12,
+    "id": 872,
+    "frag": "user",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 13,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 14,
+    "id": 785,
+    "frag": "The",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 15,
+    "id": 294,
+    "frag": " d",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 16,
+    "id": 706,
+    "frag": "ax",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 17,
+    "id": 8471,
+    "frag": " starts",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 18,
+    "id": 448,
+    "frag": " with",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 19,
+    "id": 220,
+    "frag": " ",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 20,
+    "id": 17,
+    "frag": "2",
+    "same": false,
+    "role": "source_value"
+  },
+  {
+    "pos": 21,
+    "id": 26210,
+    "frag": " stones",
+    "same": true,
+    "role": "object"
+  },
+  {
+    "pos": 22,
+    "id": 13,
+    "frag": ".",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 23,
+    "id": 1084,
+    "frag": " It",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 24,
+    "id": 21189,
+    "frag": " receives",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 25,
+    "id": 220,
+    "frag": " ",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 26,
+    "id": 19,
+    "frag": "4",
+    "same": true,
+    "role": "operand"
+  },
+  {
+    "pos": 27,
+    "id": 803,
+    "frag": " more",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 28,
+    "id": 26210,
+    "frag": " stones",
+    "same": true,
+    "role": "object"
+  },
+  {
+    "pos": 29,
+    "id": 13,
+    "frag": ".",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 30,
+    "id": 2585,
+    "frag": " How",
+    "same": true,
+    "role": "question"
+  },
+  {
+    "pos": 31,
+    "id": 1657,
+    "frag": " many",
+    "same": true,
+    "role": "question"
+  },
+  {
+    "pos": 32,
+    "id": 26210,
+    "frag": " stones",
+    "same": true,
+    "role": "object"
+  },
+  {
+    "pos": 33,
+    "id": 1558,
+    "frag": " does",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 34,
+    "id": 279,
+    "frag": " the",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 35,
+    "id": 294,
+    "frag": " d",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 36,
+    "id": 706,
+    "frag": "ax",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 37,
+    "id": 614,
+    "frag": " have",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 38,
+    "id": 1431,
+    "frag": " now",
+    "same": true,
+    "role": "question"
+  },
+  {
+    "pos": 39,
+    "id": 30,
+    "frag": "?",
+    "same": true,
+    "role": "question_end"
+  },
+  {
+    "pos": 40,
+    "id": 17841,
+    "frag": " Reply",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 41,
+    "id": 448,
+    "frag": " with",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 42,
+    "id": 1101,
+    "frag": " just",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 43,
+    "id": 279,
+    "frag": " the",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 44,
+    "id": 1372,
+    "frag": " number",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 45,
+    "id": 13,
+    "frag": ".",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 46,
+    "id": 151645,
+    "frag": "<|im_end|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 47,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 48,
+    "id": 151644,
+    "frag": "<|im_start|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 49,
+    "id": 77091,
+    "frag": "assistant",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 50,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "assistant_prefix"
+  }
+]

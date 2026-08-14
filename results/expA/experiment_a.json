@@ -1,0 +1,101 @@
+{
+  "prompt": "What is the capital of France? Answer in one word.",
+  "sweep_layers": [
+    11,
+    14,
+    16,
+    19
+  ],
+  "layers": {
+    "11": {
+      "activation_stats_full": {
+        "shape": [
+          31,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "norm_full": 11052.98828125,
+        "mean": 0.061737060546875,
+        "std": 50.65327453613281,
+        "min": -6627.18701171875,
+        "max": 5274.71728515625
+      },
+      "last_token_norm": 45.503211975097656,
+      "reproducibility_activation": {
+        "exact_equal": true,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "cosine": 0.9999998807907104
+      }
+    },
+    "14": {
+      "activation_stats_full": {
+        "shape": [
+          31,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "norm_full": 11052.072265625,
+        "mean": 0.057422734797000885,
+        "std": 50.64907455444336,
+        "min": -6628.37646484375,
+        "max": 5277.0078125
+      },
+      "last_token_norm": 51.50508117675781,
+      "reproducibility_activation": {
+        "exact_equal": true,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "cosine": 0.9999998807907104
+      }
+    },
+    "16": {
+      "activation_stats_full": {
+        "shape": [
+          31,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "norm_full": 11048.2548828125,
+        "mean": 0.0564361996948719,
+        "std": 50.631587982177734,
+        "min": -6629.7294921875,
+        "max": 5278.5283203125
+      },
+      "last_token_norm": 60.920310974121094,
+      "reproducibility_activation": {
+        "exact_equal": true,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "cosine": 1.0000001192092896
+      }
+    },
+    "19": {
+      "activation_stats_full": {
+        "shape": [
+          31,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "norm_full": 11050.04296875,
+        "mean": 0.05218908190727234,
+        "std": 50.63978576660156,
+        "min": -6635.802734375,
+        "max": 5282.8056640625
+      },
+      "last_token_norm": 66.57755279541016,
+      "reproducibility_activation": {
+        "exact_equal": true,
+        "max_abs_diff": 0.0,
+        "mean_abs_diff": 0.0,
+        "cosine": 1.0000001192092896
+      }
+    }
+  },
+  "reproducibility_logits": {
+    "exact_equal": true,
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "cosine": 1.0000001192092896
+  }
+}

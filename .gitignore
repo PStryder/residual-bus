@@ -1,0 +1,19 @@
+# --- environment & third-party weights (never commit) ---
+.venv/
+venv/
+models/
+__pycache__/
+*.pyc
+
+# --- scratch download helpers (documented in README instead) ---
+_fetch.py
+_fetch_ms.py
+
+# --- large, fully-reproducible activation tensors (regenerate via the scripts) ---
+# All *.pt are ignored EXCEPT the tiny reusable constructed direction vectors,
+# which are force-added (git add -f) so they can be loaded without a GPU run.
+*.pt
+
+# misc
+.DS_Store
+*.tmp

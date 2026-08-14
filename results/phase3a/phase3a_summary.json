@@ -1,0 +1,75 @@
+{
+  "env": {
+    "python": "3.11.8",
+    "torch": "2.6.0+cu124",
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "model_id": "F:/HexyLab/residual-bus/models/Qwen2.5-1.5B-Instruct"
+  },
+  "alphas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "color": {
+    "task": "phase2A_copy(blue->green)",
+    "P_source": 20,
+    "ansA": 12203,
+    "ansB": 13250,
+    "S_natural": 28.912893295288086,
+    "classification": {
+      "verdict": "PASS",
+      "gate_sanity_alpha1_reproduces_replacement": true,
+      "gate_semantic_beats_random": true,
+      "gate_dose_response_coherent": true,
+      "gate_receptive_beats_postdeadline": true,
+      "gate_subreplacement_regime(5a_or_5b)": true,
+      "subreplacement_flip_alpha(5a)": 0.5,
+      "subreplacement_bigfraction_exists(5b)": true,
+      "strong_site_L": 8,
+      "post_deadline_L": 24,
+      "postdeadline_never_flips_any_alpha": true,
+      "postdeadline_targetprob_at_alpha1": 0.0005194929108026311,
+      "postdeadline_kl_at_alpha1": 0.0005214303872656185,
+      "oracle_gate_metric": "argmax_is_target + P(target)>=0.5 (strong); never-flips + P(target)<0.10 + KL<0.5 (post-deadline). Corrected from transfer_fraction (Phase 2C: contrast drifts under perturbation, not decisive).",
+      "semantic_max_targetprob": 0.9999548797012192,
+      "random_max_targetprob": 0.00029543449849407714,
+      "recommended_site_L": 8,
+      "recommended_alpha": 0.5,
+      "S_natural": 28.912893295288086
+    }
+  },
+  "compare_secondary": {
+    "task": "phase2C_comparison",
+    "P_source": 16,
+    "S_natural": 28.974340438842773,
+    "classification": {
+      "verdict": "PASS",
+      "gate_sanity_alpha1_reproduces_replacement": true,
+      "gate_semantic_beats_random": true,
+      "gate_dose_response_coherent": true,
+      "gate_receptive_beats_postdeadline": true,
+      "gate_subreplacement_regime(5a_or_5b)": true,
+      "subreplacement_flip_alpha(5a)": 0.75,
+      "subreplacement_bigfraction_exists(5b)": true,
+      "strong_site_L": 4,
+      "post_deadline_L": 20,
+      "postdeadline_never_flips_any_alpha": true,
+      "postdeadline_targetprob_at_alpha1": 1.523686363631564e-06,
+      "postdeadline_kl_at_alpha1": 2.4444138247535277e-06,
+      "oracle_gate_metric": "argmax_is_target + P(target)>=0.5 (strong); never-flips + P(target)<0.10 + KL<0.5 (post-deadline). Corrected from transfer_fraction (Phase 2C: contrast drifts under perturbation, not decisive).",
+      "semantic_max_targetprob": 0.999605786167448,
+      "random_max_targetprob": 1.0322466720717369e-05,
+      "recommended_site_L": 4,
+      "recommended_alpha": 0.75,
+      "S_natural": 28.974340438842773
+    }
+  },
+  "overall_verdict": "PASS",
+  "advance_to_3C": true
+}

@@ -1,0 +1,42 @@
+{
+  "env": {
+    "python": "3.11.8",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "model_id": "F:/HexyLab/residual-bus/models/Qwen2.5-1.5B-Instruct",
+    "dtype": "torch.float32"
+  },
+  "n_layers": 28,
+  "hidden": 1536,
+  "seq": 51,
+  "task": "arithmetic_transform (non-copy)",
+  "pair": {
+    "xA": 1,
+    "xB": 2,
+    "k": 4,
+    "answer_A": 20,
+    "answer_B": 21,
+    "answer_tok_A": "5",
+    "answer_tok_B": "6",
+    "P_source": 20,
+    "P_operand": 26
+  },
+  "C_A": -14.356704711914062,
+  "C_B": 16.31171989440918,
+  "S_natural": 30.668424606323242,
+  "baseline_correct": {
+    "A": true,
+    "B": true
+  },
+  "baseline_repro": {
+    "A_H_exact": true,
+    "A_logits_exact": true,
+    "B_H_exact": true,
+    "B_logits_exact": true
+  },
+  "n_cells": 8568,
+  "per_cell_s": 0.04885168870290121,
+  "est_minutes": 6.976021146774292,
+  "layer_convention": "H[L] = resid_post of block L = HF hidden_states[L+1]"
+}

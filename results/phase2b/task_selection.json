@@ -1,0 +1,276 @@
+{
+  "template": "The dax starts with {X} stones. It receives 4 more stones. How many stones does the dax have now? Reply with just the number.",
+  "xA": 1,
+  "xB": 2,
+  "k": 4,
+  "answer_A": {
+    "id": 20,
+    "tok": "5"
+  },
+  "answer_B": {
+    "id": 21,
+    "tok": "6"
+  },
+  "P_source": 20,
+  "P_operand": 26,
+  "seq": 51,
+  "non_copy_verified": true,
+  "search_log": [
+    {
+      "x": 1,
+      "k": 4,
+      "seq": 51,
+      "argmax": "5",
+      "expected": "5",
+      "correct": true
+    },
+    {
+      "x": 2,
+      "k": 4,
+      "seq": 51,
+      "argmax": "6",
+      "expected": "6",
+      "correct": true
+    },
+    {
+      "x": 3,
+      "k": 4,
+      "seq": 51,
+      "argmax": "7",
+      "expected": "7",
+      "correct": true
+    },
+    {
+      "x": 4,
+      "k": 4,
+      "seq": 51,
+      "argmax": "8",
+      "expected": "8",
+      "correct": true
+    },
+    {
+      "x": 5,
+      "k": 4,
+      "seq": 51,
+      "argmax": "9",
+      "expected": "9",
+      "correct": true
+    },
+    {
+      "x": 6,
+      "k": 4,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "10",
+      "correct": false
+    },
+    {
+      "x": 7,
+      "k": 4,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "11",
+      "correct": false
+    },
+    {
+      "x": 8,
+      "k": 4,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "12",
+      "correct": false
+    },
+    {
+      "x": 1,
+      "k": 3,
+      "seq": 51,
+      "argmax": "4",
+      "expected": "4",
+      "correct": true
+    },
+    {
+      "x": 2,
+      "k": 3,
+      "seq": 51,
+      "argmax": "5",
+      "expected": "5",
+      "correct": true
+    },
+    {
+      "x": 3,
+      "k": 3,
+      "seq": 51,
+      "argmax": "6",
+      "expected": "6",
+      "correct": true
+    },
+    {
+      "x": 4,
+      "k": 3,
+      "seq": 51,
+      "argmax": "7",
+      "expected": "7",
+      "correct": true
+    },
+    {
+      "x": 5,
+      "k": 3,
+      "seq": 51,
+      "argmax": "8",
+      "expected": "8",
+      "correct": true
+    },
+    {
+      "x": 6,
+      "k": 3,
+      "seq": 51,
+      "argmax": "9",
+      "expected": "9",
+      "correct": true
+    },
+    {
+      "x": 7,
+      "k": 3,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "10",
+      "correct": false
+    },
+    {
+      "x": 8,
+      "k": 3,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "11",
+      "correct": false
+    },
+    {
+      "x": 1,
+      "k": 2,
+      "seq": 51,
+      "argmax": "3",
+      "expected": "3",
+      "correct": true
+    },
+    {
+      "x": 2,
+      "k": 2,
+      "seq": 51,
+      "argmax": "4",
+      "expected": "4",
+      "correct": true
+    },
+    {
+      "x": 3,
+      "k": 2,
+      "seq": 51,
+      "argmax": "5",
+      "expected": "5",
+      "correct": true
+    },
+    {
+      "x": 4,
+      "k": 2,
+      "seq": 51,
+      "argmax": "6",
+      "expected": "6",
+      "correct": true
+    },
+    {
+      "x": 5,
+      "k": 2,
+      "seq": 51,
+      "argmax": "7",
+      "expected": "7",
+      "correct": true
+    },
+    {
+      "x": 6,
+      "k": 2,
+      "seq": 51,
+      "argmax": "8",
+      "expected": "8",
+      "correct": true
+    },
+    {
+      "x": 7,
+      "k": 2,
+      "seq": 51,
+      "argmax": "9",
+      "expected": "9",
+      "correct": true
+    },
+    {
+      "x": 8,
+      "k": 2,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "10",
+      "correct": false
+    },
+    {
+      "x": 1,
+      "k": 5,
+      "seq": 51,
+      "argmax": "6",
+      "expected": "6",
+      "correct": true
+    },
+    {
+      "x": 2,
+      "k": 5,
+      "seq": 51,
+      "argmax": "7",
+      "expected": "7",
+      "correct": true
+    },
+    {
+      "x": 3,
+      "k": 5,
+      "seq": 51,
+      "argmax": "8",
+      "expected": "8",
+      "correct": true
+    },
+    {
+      "x": 4,
+      "k": 5,
+      "seq": 51,
+      "argmax": "9",
+      "expected": "9",
+      "correct": true
+    },
+    {
+      "x": 5,
+      "k": 5,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "10",
+      "correct": false
+    },
+    {
+      "x": 6,
+      "k": 5,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "11",
+      "correct": false
+    },
+    {
+      "x": 7,
+      "k": 5,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "12",
+      "correct": false
+    },
+    {
+      "x": 8,
+      "k": 5,
+      "seq": 51,
+      "argmax": "1",
+      "expected": "13",
+      "correct": false
+    }
+  ]
+}

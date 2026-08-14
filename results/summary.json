@@ -1,0 +1,52 @@
+{
+  "env": {
+    "python": "3.11.8",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "model_id": "F:/HexyLab/residual-bus/models/Qwen2.5-1.5B-Instruct",
+    "dtype": "torch.float32"
+  },
+  "verdict": {
+    "reproducible_capture": true,
+    "alpha0_is_true_noop": true,
+    "random_sweep_monotonic_all_layers": true,
+    "direction_change_strong_all_layers": true,
+    "top1_flips_under_strong_intervention_all_layers": true,
+    "causal_control_demonstrated": true,
+    "overall_success": true,
+    "diagnostics_note": "Pure-scaling (self_a*) and same-suffix replacement (replace_promptB) are expected-weak (RMSNorm scale-invariance; structural final token) and are NOT used as success gates.",
+    "per_layer_kl": {
+      "11": {
+        "zero_kl": 12.247788402045348,
+        "rand_a3.0_kl": 20.218658544351875,
+        "self_amax_kl": 1.9457227924870535,
+        "replace_promptB_kl": 8.879555204201759e-05
+      },
+      "14": {
+        "zero_kl": 3.73562479615895,
+        "rand_a3.0_kl": 12.23039391155362,
+        "self_amax_kl": 0.46062236389786876,
+        "replace_promptB_kl": 0.00014180135149795058
+      },
+      "16": {
+        "zero_kl": 15.356243841049485,
+        "rand_a3.0_kl": 14.948665608456384,
+        "self_amax_kl": 0.2762642300642397,
+        "replace_promptB_kl": 0.00034392729205689516
+      },
+      "19": {
+        "zero_kl": 20.36863071922067,
+        "rand_a3.0_kl": 16.376425861792978,
+        "self_amax_kl": 0.0537542789500413,
+        "replace_promptB_kl": 0.001298075953609484
+      }
+    }
+  },
+  "reproducibility_logits": {
+    "exact_equal": true,
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "cosine": 1.0000001192092896
+  }
+}

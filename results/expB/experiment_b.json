@@ -1,0 +1,797 @@
+{
+  "prompt_a": "What is the capital of France? Answer in one word.",
+  "prompt_b": "What is the chemical symbol for gold? Answer in one word.",
+  "sweep_layers": [
+    11,
+    14,
+    16,
+    19
+  ],
+  "direction_seed": 1234,
+  "layers": {
+    "11": {
+      "control_last_token_norm": 45.503211975097656,
+      "control_top1": {
+        "id": 59604,
+        "tok": "Paris"
+      },
+      "interventions": {
+        "identity_alpha0": {
+          "kl_control_vs_other": 0.0,
+          "max_abs_logit_diff": 0.0,
+          "l2_logit_diff": 0.0,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 45.503211975097656,
+          "norm_after": 45.503211975097656,
+          "fired": true
+        },
+        "zero": {
+          "kl_control_vs_other": 12.247788402045348,
+          "max_abs_logit_diff": 27.704322636127472,
+          "l2_logit_diff": 1648.3918158194292,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 79090,
+            "tok": "=response"
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 45.503211975097656,
+          "norm_after": 0.0,
+          "fired": true
+        },
+        "rand_a0.1": {
+          "kl_control_vs_other": 1.210993244565217e-05,
+          "max_abs_logit_diff": 0.4710865020751953,
+          "l2_logit_diff": 35.77004461841236,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 45.503211975097656,
+          "norm_after": 45.76300811767578,
+          "fired": true
+        },
+        "rand_a0.3": {
+          "kl_control_vs_other": 0.0005335479121044083,
+          "max_abs_logit_diff": 1.6481412053108215,
+          "l2_logit_diff": 124.26513567836204,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 45.503211975097656,
+          "norm_after": 47.601539611816406,
+          "fired": true
+        },
+        "rand_a1.0": {
+          "kl_control_vs_other": 0.4374132666229147,
+          "max_abs_logit_diff": 11.9659423828125,
+          "l2_logit_diff": 947.004475320012,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.6,
+          "norm_before": 45.503211975097656,
+          "norm_after": 64.58434295654297,
+          "fired": true
+        },
+        "rand_a3.0": {
+          "kl_control_vs_other": 20.218658544351875,
+          "max_abs_logit_diff": 29.965686202049255,
+          "l2_logit_diff": 2001.0800544240133,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 422,
+            "tok": "D"
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 45.503211975097656,
+          "norm_after": 144.20672607421875,
+          "fired": true
+        },
+        "self_a0.5": {
+          "kl_control_vs_other": 0.0008896618248954529,
+          "max_abs_logit_diff": 2.590993881225586,
+          "l2_logit_diff": 240.99113619175924,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.9,
+          "norm_before": 45.503211975097656,
+          "norm_after": 68.25481414794922,
+          "fired": true
+        },
+        "self_a1.0": {
+          "kl_control_vs_other": 0.004105199196059358,
+          "max_abs_logit_diff": 5.647021293640137,
+          "l2_logit_diff": 464.4627890552317,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.6,
+          "norm_before": 45.503211975097656,
+          "norm_after": 91.00642395019531,
+          "fired": true
+        },
+        "self_a3.0": {
+          "kl_control_vs_other": 1.9457227924870535,
+          "max_abs_logit_diff": 14.002884481102228,
+          "l2_logit_diff": 1167.0241517641284,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 49000,
+            "tok": "France"
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.3,
+          "norm_before": 45.503211975097656,
+          "norm_after": 182.01284790039062,
+          "fired": true
+        },
+        "replace_promptB": {
+          "kl_control_vs_other": 8.879555204201759e-05,
+          "max_abs_logit_diff": 0.7435989379882812,
+          "l2_logit_diff": 52.36000228137874,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 45.503211975097656,
+          "norm_after": 43.38589859008789,
+          "fired": true
+        }
+      },
+      "random_sweep_kl": {
+        "0.1": 1.210993244565217e-05,
+        "0.3": 0.0005335479121044083,
+        "1.0": 0.4374132666229147,
+        "3.0": 20.218658544351875
+      },
+      "random_sweep_monotonic": true
+    },
+    "14": {
+      "control_last_token_norm": 51.50508117675781,
+      "control_top1": {
+        "id": 59604,
+        "tok": "Paris"
+      },
+      "interventions": {
+        "identity_alpha0": {
+          "kl_control_vs_other": 0.0,
+          "max_abs_logit_diff": 0.0,
+          "l2_logit_diff": 0.0,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 51.50508117675781,
+          "norm_after": 51.50508117675781,
+          "fired": true
+        },
+        "zero": {
+          "kl_control_vs_other": 3.73562479615895,
+          "max_abs_logit_diff": 20.63792133331299,
+          "l2_logit_diff": 1953.6436100473984,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 13,
+            "tok": "."
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.3,
+          "norm_before": 51.50508117675781,
+          "norm_after": 0.0,
+          "fired": true
+        },
+        "rand_a0.1": {
+          "kl_control_vs_other": 1.2780341875872934e-05,
+          "max_abs_logit_diff": 0.5671114921569824,
+          "l2_logit_diff": 39.97318128414728,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 51.50508117675781,
+          "norm_after": 51.92374801635742,
+          "fired": true
+        },
+        "rand_a0.3": {
+          "kl_control_vs_other": 0.00012295574660763504,
+          "max_abs_logit_diff": 1.740242838859558,
+          "l2_logit_diff": 125.13608601437521,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.9,
+          "norm_before": 51.50508117675781,
+          "norm_after": 54.23879623413086,
+          "fired": true
+        },
+        "rand_a1.0": {
+          "kl_control_vs_other": 0.028035395871952758,
+          "max_abs_logit_diff": 11.011533081531525,
+          "l2_logit_diff": 860.3885704249483,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.7,
+          "norm_before": 51.50508117675781,
+          "norm_after": 73.98171997070312,
+          "fired": true
+        },
+        "rand_a3.0": {
+          "kl_control_vs_other": 12.23039391155362,
+          "max_abs_logit_diff": 26.898221969604492,
+          "l2_logit_diff": 2028.8131772853806,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 25,
+            "tok": ":"
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 51.50508117675781,
+          "norm_after": 164.4110107421875,
+          "fired": true
+        },
+        "self_a0.5": {
+          "kl_control_vs_other": 0.0005955890510755523,
+          "max_abs_logit_diff": 2.5521836280822754,
+          "l2_logit_diff": 238.52039918600184,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.9,
+          "norm_before": 51.50508117675781,
+          "norm_after": 77.25761413574219,
+          "fired": true
+        },
+        "self_a1.0": {
+          "kl_control_vs_other": 0.0019627217493275195,
+          "max_abs_logit_diff": 4.918467402458191,
+          "l2_logit_diff": 470.91800676126536,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.8,
+          "norm_before": 51.50508117675781,
+          "norm_after": 103.01016235351562,
+          "fired": true
+        },
+        "self_a3.0": {
+          "kl_control_vs_other": 0.46062236389786876,
+          "max_abs_logit_diff": 12.342743873596191,
+          "l2_logit_diff": 1121.1517795196003,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.3,
+          "norm_before": 51.50508117675781,
+          "norm_after": 206.02032470703125,
+          "fired": true
+        },
+        "replace_promptB": {
+          "kl_control_vs_other": 0.00014180135149795058,
+          "max_abs_logit_diff": 0.7424150705337524,
+          "l2_logit_diff": 55.8776642548361,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 51.50508117675781,
+          "norm_after": 50.586273193359375,
+          "fired": true
+        }
+      },
+      "random_sweep_kl": {
+        "0.1": 1.2780341875872934e-05,
+        "0.3": 0.00012295574660763504,
+        "1.0": 0.028035395871952758,
+        "3.0": 12.23039391155362
+      },
+      "random_sweep_monotonic": true
+    },
+    "16": {
+      "control_last_token_norm": 60.920310974121094,
+      "control_top1": {
+        "id": 59604,
+        "tok": "Paris"
+      },
+      "interventions": {
+        "identity_alpha0": {
+          "kl_control_vs_other": 0.0,
+          "max_abs_logit_diff": 0.0,
+          "l2_logit_diff": 0.0,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 60.920310974121094,
+          "norm_after": 60.920310974121094,
+          "fired": true
+        },
+        "zero": {
+          "kl_control_vs_other": 15.356243841049485,
+          "max_abs_logit_diff": 27.169145584106445,
+          "l2_logit_diff": 1995.401611479294,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 11,
+            "tok": ","
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 60.920310974121094,
+          "norm_after": 0.0,
+          "fired": true
+        },
+        "rand_a0.1": {
+          "kl_control_vs_other": 3.7708212409900967e-05,
+          "max_abs_logit_diff": 1.0276203155517578,
+          "l2_logit_diff": 73.52433608531959,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 60.920310974121094,
+          "norm_after": 61.370086669921875,
+          "fired": true
+        },
+        "rand_a0.3": {
+          "kl_control_vs_other": 0.00028775060299509345,
+          "max_abs_logit_diff": 3.6386566162109375,
+          "l2_logit_diff": 273.643679078303,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.8,
+          "norm_before": 60.920310974121094,
+          "norm_after": 64.02320098876953,
+          "fired": true
+        },
+        "rand_a1.0": {
+          "kl_control_vs_other": 6.5890670224521894,
+          "max_abs_logit_diff": 22.096574783325195,
+          "l2_logit_diff": 1448.1335133421587,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 37,
+            "tok": "F"
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.2,
+          "norm_before": 60.920310974121094,
+          "norm_after": 87.18639373779297,
+          "fired": true
+        },
+        "rand_a3.0": {
+          "kl_control_vs_other": 14.948665608456384,
+          "max_abs_logit_diff": 28.616032600402832,
+          "l2_logit_diff": 2001.6625662089555,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 13,
+            "tok": "."
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 60.920310974121094,
+          "norm_after": 194.03489685058594,
+          "fired": true
+        },
+        "self_a0.5": {
+          "kl_control_vs_other": 0.0014423332118718409,
+          "max_abs_logit_diff": 2.87253999710083,
+          "l2_logit_diff": 255.05498620739888,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.9,
+          "norm_before": 60.920310974121094,
+          "norm_after": 91.3804702758789,
+          "fired": true
+        },
+        "self_a1.0": {
+          "kl_control_vs_other": 0.005753558768104999,
+          "max_abs_logit_diff": 5.762042045593262,
+          "l2_logit_diff": 540.678681117547,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.8,
+          "norm_before": 60.920310974121094,
+          "norm_after": 121.84062194824219,
+          "fired": true
+        },
+        "self_a3.0": {
+          "kl_control_vs_other": 0.2762642300642397,
+          "max_abs_logit_diff": 16.926727037876844,
+          "l2_logit_diff": 1466.80548934493,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.5,
+          "norm_before": 60.920310974121094,
+          "norm_after": 243.68124389648438,
+          "fired": true
+        },
+        "replace_promptB": {
+          "kl_control_vs_other": 0.00034392729205689516,
+          "max_abs_logit_diff": 3.2345199584960938,
+          "l2_logit_diff": 258.77607416811287,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.9,
+          "norm_before": 60.920310974121094,
+          "norm_after": 61.96656036376953,
+          "fired": true
+        }
+      },
+      "random_sweep_kl": {
+        "0.1": 3.7708212409900967e-05,
+        "0.3": 0.00028775060299509345,
+        "1.0": 6.5890670224521894,
+        "3.0": 14.948665608456384
+      },
+      "random_sweep_monotonic": true
+    },
+    "19": {
+      "control_last_token_norm": 66.57755279541016,
+      "control_top1": {
+        "id": 59604,
+        "tok": "Paris"
+      },
+      "interventions": {
+        "identity_alpha0": {
+          "kl_control_vs_other": 0.0,
+          "max_abs_logit_diff": 0.0,
+          "l2_logit_diff": 0.0,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 66.57755279541016,
+          "norm_after": 66.57755279541016,
+          "fired": true
+        },
+        "zero": {
+          "kl_control_vs_other": 20.36863071922067,
+          "max_abs_logit_diff": 31.027611017227173,
+          "l2_logit_diff": 1976.2744296680671,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 284,
+            "tok": "="
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 66.57755279541016,
+          "norm_after": 0.0,
+          "fired": true
+        },
+        "rand_a0.1": {
+          "kl_control_vs_other": 2.5022026651633176e-05,
+          "max_abs_logit_diff": 1.0210726261138916,
+          "l2_logit_diff": 79.04537390586589,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 66.57755279541016,
+          "norm_after": 67.01097869873047,
+          "fired": true
+        },
+        "rand_a0.3": {
+          "kl_control_vs_other": 0.0002505057305774839,
+          "max_abs_logit_diff": 2.9141494631767273,
+          "l2_logit_diff": 244.18775008737995,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 1.0,
+          "norm_before": 66.57755279541016,
+          "norm_after": 69.80133819580078,
+          "fired": true
+        },
+        "rand_a1.0": {
+          "kl_control_vs_other": 0.2993967228919282,
+          "max_abs_logit_diff": 12.384665250778198,
+          "l2_logit_diff": 1089.2798079469615,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.6,
+          "norm_before": 66.57755279541016,
+          "norm_after": 94.87303161621094,
+          "fired": true
+        },
+        "rand_a3.0": {
+          "kl_control_vs_other": 16.376425861792978,
+          "max_abs_logit_diff": 26.35375142097473,
+          "l2_logit_diff": 1834.131215242079,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 2610,
+            "tok": "You"
+          },
+          "top1_changed": true,
+          "topk_overlap": 0.0,
+          "norm_before": 66.57755279541016,
+          "norm_after": 211.50167846679688,
+          "fired": true
+        },
+        "self_a0.5": {
+          "kl_control_vs_other": 0.0008434501988783953,
+          "max_abs_logit_diff": 4.454279899597168,
+          "l2_logit_diff": 317.1825961688149,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.9,
+          "norm_before": 66.57755279541016,
+          "norm_after": 99.8663330078125,
+          "fired": true
+        },
+        "self_a1.0": {
+          "kl_control_vs_other": 0.002035485808482687,
+          "max_abs_logit_diff": 8.082118034362793,
+          "l2_logit_diff": 607.0216443436071,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.8,
+          "norm_before": 66.57755279541016,
+          "norm_after": 133.1551055908203,
+          "fired": true
+        },
+        "self_a3.0": {
+          "kl_control_vs_other": 0.0537542789500413,
+          "max_abs_logit_diff": 15.821286350488663,
+          "l2_logit_diff": 1386.41249075356,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.5,
+          "norm_before": 66.57755279541016,
+          "norm_after": 266.3102111816406,
+          "fired": true
+        },
+        "replace_promptB": {
+          "kl_control_vs_other": 0.001298075953609484,
+          "max_abs_logit_diff": 5.843501165509224,
+          "l2_logit_diff": 458.2213794475602,
+          "top1_control": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_other": {
+            "id": 59604,
+            "tok": "Paris"
+          },
+          "top1_changed": false,
+          "topk_overlap": 0.8,
+          "norm_before": 66.57755279541016,
+          "norm_after": 66.55467224121094,
+          "fired": true
+        }
+      },
+      "random_sweep_kl": {
+        "0.1": 2.5022026651633176e-05,
+        "0.3": 0.0002505057305774839,
+        "1.0": 0.2993967228919282,
+        "3.0": 16.376425861792978
+      },
+      "random_sweep_monotonic": true
+    }
+  }
+}

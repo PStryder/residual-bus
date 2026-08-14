@@ -1,0 +1,226 @@
+[
+  {
+    "pos": 0,
+    "id": 151644,
+    "frag": "<|im_start|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 1,
+    "id": 8948,
+    "frag": "system",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 2,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 3,
+    "id": 2610,
+    "frag": "You",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 4,
+    "id": 525,
+    "frag": " are",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 5,
+    "id": 264,
+    "frag": " a",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 6,
+    "id": 10950,
+    "frag": " helpful",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 7,
+    "id": 17847,
+    "frag": " assistant",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 8,
+    "id": 13,
+    "frag": ".",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 9,
+    "id": 151645,
+    "frag": "<|im_end|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 10,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 11,
+    "id": 151644,
+    "frag": "<|im_start|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 12,
+    "id": 872,
+    "frag": "user",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 13,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 14,
+    "id": 3872,
+    "frag": "Is",
+    "same": true,
+    "role": "question"
+  },
+  {
+    "pos": 15,
+    "id": 220,
+    "frag": " ",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 16,
+    "id": 16,
+    "frag": "1",
+    "same": false,
+    "role": "source_value"
+  },
+  {
+    "pos": 17,
+    "id": 7046,
+    "frag": " greater",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 18,
+    "id": 1091,
+    "frag": " than",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 19,
+    "id": 220,
+    "frag": " ",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 20,
+    "id": 19,
+    "frag": "4",
+    "same": true,
+    "role": "threshold"
+  },
+  {
+    "pos": 21,
+    "id": 30,
+    "frag": "?",
+    "same": true,
+    "role": "question_end"
+  },
+  {
+    "pos": 22,
+    "id": 21806,
+    "frag": " Answer",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 23,
+    "id": 304,
+    "frag": " in",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 24,
+    "id": 825,
+    "frag": " one",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 25,
+    "id": 3409,
+    "frag": " word",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 26,
+    "id": 13,
+    "frag": ".",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 27,
+    "id": 151645,
+    "frag": "<|im_end|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 28,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "content"
+  },
+  {
+    "pos": 29,
+    "id": 151644,
+    "frag": "<|im_start|>",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 30,
+    "id": 77091,
+    "frag": "assistant",
+    "same": true,
+    "role": "chat_template"
+  },
+  {
+    "pos": 31,
+    "id": 198,
+    "frag": "\n",
+    "same": true,
+    "role": "assistant_prefix"
+  }
+]

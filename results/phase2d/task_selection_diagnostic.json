@@ -1,0 +1,175 @@
+{
+  "model": "F:/HexyLab/residual-bus/models/Qwen2.5-1.5B-Instruct",
+  "n_single_token_labels": 20,
+  "labels": [
+    "Tom",
+    "Sam",
+    "Ben",
+    "Max",
+    "Leo",
+    "Ivy",
+    "Uma",
+    "Eli",
+    "Rob",
+    "Amy",
+    "Ray",
+    "Lee",
+    "Kim",
+    "Ana",
+    "Dan",
+    "Tim",
+    "Joe",
+    "Rex",
+    "Val",
+    "Jay"
+  ],
+  "n_configs_per_template": 24,
+  "templates": {
+    "path_exact": {
+      "binding_sensitive_correct": 0,
+      "insensitive_A_eq_B": 12,
+      "high_conf_valid_pairs": 0,
+      "total": 24,
+      "example_promptA": "Only these directed links exist. Tom points to Sam. Sam points to Ben. Is there a path of exactly two links from Tom to Ben? Answer in one word.",
+      "example_A_top5": [
+        [
+          "Yes",
+          0.517
+        ],
+        [
+          "No",
+          0.336
+        ],
+        [
+          "no",
+          0.075
+        ],
+        [
+          "yes",
+          0.071
+        ],
+        [
+          "NO",
+          0.001
+        ]
+      ]
+    },
+    "reach_2steps": {
+      "binding_sensitive_correct": 3,
+      "insensitive_A_eq_B": 21,
+      "high_conf_valid_pairs": 0,
+      "total": 24,
+      "example_promptA": "Only these links exist: Tom to Sam, Sam to Ben. Can you get from Tom to Ben in exactly two steps? Answer in one word.",
+      "example_A_top5": [
+        [
+          "Yes",
+          0.434
+        ],
+        [
+          "No",
+          0.205
+        ],
+        [
+          "yes",
+          0.188
+        ],
+        [
+          "no",
+          0.168
+        ],
+        [
+          "not",
+          0.002
+        ]
+      ]
+    },
+    "arrow_2hop": {
+      "binding_sensitive_correct": 0,
+      "insensitive_A_eq_B": 24,
+      "high_conf_valid_pairs": 0,
+      "total": 24,
+      "example_promptA": "Graph edges: Tom->Sam, Sam->Ben. Is Ben reachable from Tom using exactly 2 edges? Answer in one word.",
+      "example_A_top5": [
+        [
+          "Yes",
+          0.841
+        ],
+        [
+          "No",
+          0.127
+        ],
+        [
+          "yes",
+          0.024
+        ],
+        [
+          "no",
+          0.004
+        ],
+        [
+          "YES",
+          0.002
+        ]
+      ]
+    },
+    "follows": {
+      "binding_sensitive_correct": 0,
+      "insensitive_A_eq_B": 24,
+      "high_conf_valid_pairs": 0,
+      "total": 24,
+      "example_promptA": "Tom follows Sam. Sam follows Ben. Does Tom follow someone who follows Ben? Answer in one word.",
+      "example_A_top5": [
+        [
+          "Yes",
+          0.915
+        ],
+        [
+          "Ben",
+          0.056
+        ],
+        [
+          "No",
+          0.017
+        ],
+        [
+          "yes",
+          0.007
+        ],
+        [
+          "Sam",
+          0.005
+        ]
+      ]
+    },
+    "gives": {
+      "binding_sensitive_correct": 0,
+      "insensitive_A_eq_B": 24,
+      "high_conf_valid_pairs": 0,
+      "total": 24,
+      "example_promptA": "Tom gave a ball to Sam. Sam gave a ball to Ben. Did the ball reach Ben after two passes starting from Tom? Answer in one word.",
+      "example_A_top5": [
+        [
+          "Yes",
+          0.962
+        ],
+        [
+          "yes",
+          0.023
+        ],
+        [
+          "No",
+          0.015
+        ],
+        [
+          "Y",
+          0.0
+        ],
+        [
+          "no",
+          0.0
+        ]
+      ]
+    }
+  },
+  "conclusion": "HALT: model is binding-insensitive; 0 high-confidence valid pairs across all templates."
+}

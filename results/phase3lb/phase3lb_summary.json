@@ -1,0 +1,191 @@
+{
+  "env": {
+    "python": "3.11.8",
+    "torch": "2.6.0+cu124",
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "model_id": "F:/HexyLab/residual-bus/models/Qwen2.5-1.5B-Instruct"
+  },
+  "frozen": {
+    "train_entities": [
+      "wug",
+      "cat",
+      "ring",
+      "book",
+      "hat",
+      "cup",
+      "star",
+      "fish",
+      "pen",
+      "car",
+      "box",
+      "leaf",
+      "coin",
+      "key"
+    ],
+    "heldout_entities": [
+      "tom",
+      "sam",
+      "lamp",
+      "tree",
+      "dog",
+      "dax"
+    ],
+    "GREEN_id": 13250,
+    "BLUE_id": 12203,
+    "alphas": [
+      0.5,
+      1.0
+    ],
+    "N_rand_per_layer": 500,
+    "receptive_layers": [
+      4,
+      8,
+      12,
+      15,
+      18
+    ],
+    "dead_layer": 24,
+    "anchor_L8_S": 0.8791111020031558,
+    "anchor_L8_flip": 1.0
+  },
+  "per_layer": {
+    "4": {
+      "role": "receptive",
+      "dmean_norm": 37.52511215209961,
+      "cos_to_exact": 0.9644810557365417,
+      "semantic": {
+        "0.5": {
+          "flip": 0.6666666666666666,
+          "S": 0.7192096928810338,
+          "spec_mean_pgreen": 9.673001681848048e-09
+        },
+        "1.0": {
+          "flip": 1.0,
+          "S": 0.9999057031862725,
+          "spec_mean_pgreen": 8.110065124241135e-09
+        }
+      },
+      "null_mean_S": 1.0568800956325956e-06,
+      "null_max_S": 3.044589958400918e-05,
+      "null_max_flip": 0.0,
+      "null_p_addone": 0.001996007984031936
+    },
+    "8": {
+      "role": "receptive",
+      "dmean_norm": 34.05711364746094,
+      "cos_to_exact": 0.8980090916156769,
+      "semantic": {
+        "0.5": {
+          "flip": 1.0,
+          "S": 0.8791111020031558,
+          "spec_mean_pgreen": 7.933000594904302e-09
+        },
+        "1.0": {
+          "flip": 1.0,
+          "S": 0.9999209177125149,
+          "spec_mean_pgreen": 5.760631837126156e-09
+        }
+      },
+      "null_mean_S": 1.2940226131086133e-06,
+      "null_max_S": 7.68555916508434e-06,
+      "null_max_flip": 0.0,
+      "null_p_addone": 0.001996007984031936
+    },
+    "12": {
+      "role": "receptive",
+      "dmean_norm": 33.359493255615234,
+      "cos_to_exact": 0.8981624941031138,
+      "semantic": {
+        "0.5": {
+          "flip": 1.0,
+          "S": 0.7834574822424344,
+          "spec_mean_pgreen": 9.525517007899701e-09
+        },
+        "1.0": {
+          "flip": 1.0,
+          "S": 0.9999378492010695,
+          "spec_mean_pgreen": 8.738552280312009e-09
+        }
+      },
+      "null_mean_S": 1.02865893296964e-06,
+      "null_max_S": 4.090466549474569e-06,
+      "null_max_flip": 0.0,
+      "null_p_addone": 0.001996007984031936
+    },
+    "15": {
+      "role": "receptive",
+      "dmean_norm": 33.096092224121094,
+      "cos_to_exact": 0.8944778641064962,
+      "semantic": {
+        "0.5": {
+          "flip": 1.0,
+          "S": 0.7515666074340929,
+          "spec_mean_pgreen": 1.0358146093152646e-08
+        },
+        "1.0": {
+          "flip": 1.0,
+          "S": 0.999937858328572,
+          "spec_mean_pgreen": 1.0003813991505338e-08
+        }
+      },
+      "null_mean_S": 1.0938849492268792e-06,
+      "null_max_S": 4.938541235219238e-06,
+      "null_max_flip": 0.0,
+      "null_p_addone": 0.001996007984031936
+    },
+    "18": {
+      "role": "receptive",
+      "dmean_norm": 33.71550750732422,
+      "cos_to_exact": 0.8925980726877848,
+      "semantic": {
+        "0.5": {
+          "flip": 1.0,
+          "S": 0.7664693784560056,
+          "spec_mean_pgreen": 1.05303182217626e-08
+        },
+        "1.0": {
+          "flip": 1.0,
+          "S": 0.999943971321322,
+          "spec_mean_pgreen": 1.0794681691543472e-08
+        }
+      },
+      "null_mean_S": 1.0384937770586505e-06,
+      "null_max_S": 5.4242394391561904e-06,
+      "null_max_flip": 0.0,
+      "null_p_addone": 0.001996007984031936
+    },
+    "24": {
+      "role": "post_deadline",
+      "dmean_norm": 75.31783294677734,
+      "cos_to_exact": 0.9019133150577545,
+      "semantic": {
+        "0.5": {
+          "flip": 0.0,
+          "S": 5.218966600010341e-05,
+          "spec_mean_pgreen": 1.0428524655887837e-08
+        },
+        "1.0": {
+          "flip": 0.0,
+          "S": 0.010817770086631004,
+          "spec_mean_pgreen": 1.1494698059676708e-08
+        }
+      },
+      "null_mean_S": 8.099223472914266e-07,
+      "null_max_S": 1.857916571218462e-06,
+      "null_max_flip": 0.0,
+      "null_p_addone": 0.001996007984031936
+    }
+  },
+  "classification": {
+    "verdict": "ROBUST",
+    "receptive_layers_passing(excl_L8)": [
+      4,
+      12,
+      15,
+      18
+    ],
+    "n_receptive_pass": 4,
+    "dead_layer_fails": true,
+    "criterion": "L8 not a cherry-pick if >=2 other receptive layers give held-out flip>=0.8 @a<=1.0, null flip~0, spec<0.05; dead layer fails"
+  }
+}
